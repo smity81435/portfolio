@@ -10,6 +10,8 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -22,7 +24,7 @@
             <div id="topbar">
                 <div id="logo"><img src="img/load1.svg" alt=""></div>
                 <div id="name">
-                   <header>
+                    <header>
                         <h1>Douglas Smith</h1>
                     </header>
                 </div>
@@ -36,11 +38,19 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li><a href="#" id="recent" class="pageSection selected">RECENT</a></li>
+                    <li><a href="#" id="recent" class="pageSection selected">RECENT</a>
+                        <ul class="recentList closed">
+                            <li>Talus</li>
+                            <li>SVA</li>
+                            <li>Pharos</li>
+                            <li>Sluice</li>
+                        </ul>
+                    
+                    </li>
                     <li><a href="#" id="projects" class="pageSection projList">PROJECTS</a>
                         <ul id="projectcats" class="closed">
-                           <li  class="cat"><a href="#" class="cat" id="featured"></a></li>
-                            <li  class="cat"><a href="#" class="cat" id="cat1">GRAPHIC DESIGN</a>
+                            <li class="cat"><a href="#" class="cat" id="featured"></a></li>
+                            <li class="cat"><a href="#" class="cat" id="cat1">GRAPHIC DESIGN</a>
                                 <ul class="sublist closed">
                                     <li><a href="#" class="proj" id="projid" target="_blank">SVA</a></li>
                                     <li><a href="#" class="proj" id="projid" target="_blank">MONA MOVERS</a></li>
@@ -82,51 +92,158 @@
             </div>
         </div>
         <div id="content">
-            <div class="recentBox" id="talus">
-                <h3>Talus Analytics</h3>
-                <p>Company website for the data analytics and web development company <em>Talus Analytics</em></p>
+            <div class="slider one-time autoplay">
+                    <div class="recentBox" id="talus">
+                    
+                       <div class="textbox"id="talus">
+                           <div class="fadebox">
+                                <h3>Talus Analytics</h3>
+                                <p>Company website for the data analytics and web development company <em>Talus Analytics</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentBox" >
+                      
+                        <div class="textbox"id="sva">
+                           <div class="fadebox">
+                                <h3>Student Veterans Assoc.</h3>
+                                <p>Branding for the The University of Colorado's <em>Student Veterans Association.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentBox" >
+                     
+                        <div class="textbox" id="pharos">
+                           <div class="fadebox">
+                                <h3>Pharos</h3>
+                                <p>Graphic design and branding for an artificially intelligent audiobook application <em>Pharos.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentBox" >
+                       
+                        <div class="textbox" id="sluice">
+                           <div class="fadebox">
+                                <h3>Sluice</h3>
+                                <p>UI/UX Development and Branding for a river-sport enthusiast mobile application <em>Sluice.</em></p>
+                            </div>
+                        </div>
+                    </div>
             </div>
-            <div class="recentBox" id="sva">
-                <div class="textbox">
-                <h3>Student Veterans Assoc.</h3>
-                <p>Branding for the The University of Colorado's <em>Student Veterans Association.</em></p>
+            <div class="feat" id="talusPage">
+                <div class="intro">
+                    <header>
+                        <h2>Talus Analytics Company Page</h2>
+                    </header>
+                </div>
+                <div class="brief">
+                    <div class="short">
+                        <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus labore ipsam delectus facere voluptatem molestias nesciunt quaerat nisi odit quod blanditiis, fuga a velit laudantium magni sapiente veritatis repellendus.</p>
+                    </div>
+                    <div class="featgallery">
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                    </div>
+                </div>
+                <div class="long">
+                    <section class="longDesc">
+                        <p></p>
+                        <div class="wow"></div>
+                        <p></p>
+                    </section>
+                </div>
+                <div class="end">
+                    <a href=""></a>
+                    <p></p>
                 </div>
             </div>
-            <div class="recentBox" id="pharos">
-               
-               <div class="textbox">
-                <h3>Pharos</h3>
-                <p>Graphic design and branding for an artificially intelligent audiobook application <em>Pharos.</em></p>
+            <div class="feat" id="veteranPage">
+                <div class="intro">
+                    <header>
+                        <h2>CU Student Veterans Association Branding</h2>
+                    </header>
                 </div>
-            </div>            
-            <div class="recentBox" id="sluice">
-               <div class="textbox">
-                <h3>Sluice</h3>
-                <p>UI/UX Development and Branding for a river-sport enthusiast mobile application <em>Sluice.</em></p>
+                <div class="brief">
+                    <div class="short">
+                        <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam hic ipsum placeat quia dolorum. Dolore beatae tenetur cumque culpa quae, ipsum quo at non. Commodi modi ex suscipit, rerum ipsum?</p>
+                    </div>
+                    <div class="featgallery">
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                    </div>
+                </div>
+                <div class="long">
+                    <section class="longDesc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi unde provident, distinctio optio harum veniam nisi vero voluptatum sequi asperiores. Nobis eligendi ipsam quasi cupiditate labore dolorem iste. Id, ipsa!</p>
+                        <div class="wow"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit vel sit! Nulla est animi illum vitae ipsa minus architecto. Mollitia et ullam nulla nobis saepe, perferendis dolor doloribus minus.</p>
+                    </section>
+                </div>
+                <div class="end">
+                    <a href=""></a>
+                    <p></p>
                 </div>
             </div>
-            
-        </div>
-        <div id="sidestep">
-            <ul>
-                <li id="one" class="">01</li>
-                <li id="two" class="">02</li>
-                <li id="three" class="">03</li>
-                <li id="four" class="">04</li>
-            </ul>
-        </div>
-        <div class="where">
-            <h2 id="whereIAm">RECENT</h2>
+            <div class="feat" id="pharosPage">
+                <div class="intro">
+                    <header>
+                        <h2>PHAROS Mobile Application Design</h2>
+                    </header>
+                </div>
+                <div class="brief">
+                    <div class="short">
+                        <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae error, fuga eum esse unde accusamus, nam alias voluptas recusandae perspiciatis. Quibusdam earum explicabo animi sunt et accusamus maxime nam recusandae!</p>
+                    </div>
+                    <div class="featgallery">
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                    </div>
+                </div>
+                <div class="long">
+                    <section class="longDesc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo eum similique sunt vero repudiandae fugit, sequi, aliquid quis ullam nemo hic? Inventore consequuntur, laborum blanditiis dolor ipsum ratione odio.</p>
+                        <div class="wow"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat beatae dolorem id culpa ea sit aspernatur porro nulla maxime repellendus fuga, quisquam animi nihil totam, nisi accusamus velit ullam. Voluptas?</p>
+                    </section>
+                </div>
+                <div class="end">
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="feat" id="sluicePage">
+                <div class="intro">
+                    <header>
+                        <h2>Sluice UI/UX Design</h2>
+                    </header>
+                </div>
+                <div class="brief">
+                    <div class="short">
+                        <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, illo sint aspernatur ipsam maiores enim expedita. Fugiat porro officia temporibus at, odio iste beatae necessitatibus, repellat esse id. Deleniti, minima.</p>
+                    </div>
+                    <div class="featgallery">
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                    </div>
+                </div>
+                <div class="long">
+                    <section class="longDesc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo consectetur, optio reprehenderit, officia earum quisquam labore aliquid ut perspiciatis laborum dolore facilis neque explicabo officiis praesentium alias ullam quod.</p>
+                        <div class="wow"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit, debitis sint deleniti perspiciatis voluptatum, cum. Tempore, animi dolore veniam alias architecto quod. Debitis reprehenderit maxime nulla a corporis hic!</p>
+                    </section>
+                </div>
+                <div class="end">
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
 
 
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -135,7 +252,9 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function() {

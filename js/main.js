@@ -1,3 +1,36 @@
+//VARIABLES
+const SLIDER = $(".slider");
+
+
+//SLIDER
+$(document).ready(function(){
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 400,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        adaptiveHeight:true,
+        draggable: false,
+        pauseOnDotsHover: true
+    });
+    
+});
+$(".textbox").click(function(){
+    var id = this.id;
+    if(SLIDER.hasClass("no")==false){
+        SLIDER.fadeOut();
+        SLIDER.addClass("no");
+        console.log("boom "+id);
+    }
+    
+});
+
+
 
 //NAV FUNCTIONS
 $("#projects").click(function(){
