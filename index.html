@@ -1,45 +1,152 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Portfolio of D.S.S.</title>
+    <meta name="description" content="Personal Web development Portfolio of Douglas Scott Smith">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-        <!-- Add your site or application content here -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+    <!-- Add your site or application content here -->
+    <div id="all">
+        <div id="navigate">
+            <div id="topbar">
+                <div id="logo"><img src="img/load1.svg" alt=""></div>
+                <div id="name">
+                   <header>
+                        <h1>Douglas Smith</h1>
+                    </header>
+                </div>
+                <div id="social">
+                    <ul>
+                        <li>instagram</li>
+                        <li>github</li>
+                        <li>linkedin</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#" id="recent" class="pageSection selected">RECENT</a></li>
+                    <li><a href="#" id="projects" class="pageSection projList">PROJECTS</a>
+                        <ul id="projectcats" class="closed">
+                           <li  class="cat"><a href="#" class="cat" id="featured"></a></li>
+                            <li  class="cat"><a href="#" class="cat" id="cat1">GRAPHIC DESIGN</a>
+                                <ul class="sublist closed">
+                                    <li><a href="#" class="proj" id="projid" target="_blank">SVA</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">MONA MOVERS</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">HORNED LIZARD STUDIOS</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">COLORADO SYMPHONY</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">ODYSSEY</a></li>
+                                </ul>
+                            </li>
+                            <li class="cat"><a href="#" class="cat" id="cat2">WEB DEVELOPMENT</a>
+                                <ul class="sublist closed">
+                                    <li><a href="#" class="proj" id="projid" target="_blank">TALUS ANALYTICS</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">SUBSAHARAN AFRICA</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">RSEC</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">ASTEROID TRACKER</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">EARTHQUAKE TRACKER</a></li>
+                                </ul>
+                            </li>
+                            <li class="cat"><a href="#" class="cat" id="cat3">MOBILE DESIGN</a>
+                                <ul class="sublist closed">
+                                    <li><a href="#" class="proj" id="projid" target="_blank">SLUICE</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">PHAROS</a></li>
+                                </ul>
+                            </li>
+                            <li class="cat"><a href="#" id="cat4">3D DESIGN</a>
+                                <ul class="sublist closed">
+                                    <li><a href="#" class="proj" id="projid" target="_blank">EVIL NUN</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">RGB VISUALIZER</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">TEAPOT</a></li>
+                                    <li><a href="#" class="proj" id="projid" target="_blank">LOW-POLY FOX</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="art" class="pageSection">ART</a></li>
+                    <li><a href="#" id="about" class="pageSection">ABOUT</a></li>
+                    <li><a href="#" id="contact" class="pageSection">CONTACT</a></li>
+                    <li><a href="http://dpower3.wordpress.com" id="blog" class="pageSection" target="_blan k">BLOG</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="recentBox" id="talus">
+                <h3>Talus Analytics</h3>
+                <p>Company website for the data analytics and web development company <em>Talus Analytics</em></p>
+            </div>
+            <div class="recentBox" id="sva">
+                <div class="textbox">
+                <h3>Student Veterans Assoc.</h3>
+                <p>Branding for the The University of Colorado's <em>Student Veterans Association.</em></p>
+                </div>
+            </div>
+            <div class="recentBox" id="pharos">
+               
+               <div class="textbox">
+                <h3>Pharos</h3>
+                <p>Graphic design and branding for an artificially intelligent audiobook application <em>Pharos.</em></p>
+                </div>
+            </div>            
+            <div class="recentBox" id="sluice">
+               <div class="textbox">
+                <h3>Sluice</h3>
+                <p>UI/UX Development and Branding for a river-sport enthusiast mobile application <em>Sluice.</em></p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="sidestep">
+            <ul>
+                <li id="one" class="">01</li>
+                <li id="two" class="">02</li>
+                <li id="three" class="">03</li>
+                <li id="four" class="">04</li>
+            </ul>
+        </div>
+        <div class="where">
+            <h2 id="whereIAm">RECENT</h2>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
 </html>
