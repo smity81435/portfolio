@@ -18,6 +18,12 @@ $(document).ready(function(){
         draggable: false,
         pauseOnDotsHover: true
     });
+    if($(window).scrollTop > 100){
+        $("#nameBanner").fadeOut();
+        
+    }else{
+        $("#nameBanner").fadeIn();
+    }
     
 });
 $(".textbox").click(function(){
@@ -27,6 +33,7 @@ $(".textbox").click(function(){
         SLIDER.addClass("no");
         console.log("boom "+id);
     }
+    $("#"+id+"Page").fadeIn();
     
 });
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600,700');
+//PAGE LAYOUT
 body{
     font-family: "Cormorant Garamond", serif;
     background: radial-gradient(rgb(77, 77, 77), black) no-repeat center center;
@@ -13,8 +14,8 @@ body{
 #topbar{
     height: 5vh;
     margin: 0;
-    display: flex;
-    justify-content: space-between;
+//    display: flex;
+//    justify-content: space-between;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -22,24 +23,38 @@ body{
     right: 0;
 
     ul{
-        display: flex;
+        width: 50px;
+        list-style: none;
+        padding: 0;
         li{
-            width: 100px;
+            width: 50px;
+            opacity: .5;
+            &:hover{
+                opacity: 1;
+            }
         }
     }
     header{
         margin: auto;
-        height: 100%;
+        height: 100px;
         background: url("../img/name.svg")no-repeat center center;
-        width: 200px;
+        width: 300px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
         h1{
             display: none;
         }
     }
 }
 #social{
-    background: white;
-    width: 100px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background: none;
+    
+    
 }
 #menu{
     line-height: 2em;
@@ -96,8 +111,8 @@ body{
 }
 #logo{
     img{
-            height: 80%;
-        margin: auto;
+        width: 50px;
+        margin: 5px;;
     }
 
 }
@@ -135,33 +150,11 @@ body{
     margin: 0 auto;
     margin-top: 20vh;
 }
-#talus{
-    background: rgba(157, 44, 44, 0.56);
-}
-#sva{
-    background: rgba(44, 105, 157, 0.56);
-    
-}
-#pharos{
-    background: rgba(44, 157, 96, 0.56);
-}
-#sluice{
-    background: rgba(160, 136, 35, 0.56);
-}
-.showMe{
-    height: 400px;
-    width: 100%;
-}
-.feat{
-    width: 70vw;
-    display: none;
-}
-.featgallery{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    
-}
+
+//TOPBAR
+
+
+//SLIDER CONTROLS
 .arw{
     position: fixed;
         top: 50%;
@@ -247,4 +240,85 @@ body{
 #pharos{
     background: url("../img/pharos.png") no-repeat center center;
     background-size: contain;
+}
+//Documentations
+.feat{
+    color: white;
+    width: 70vw;
+    display: none;
+    margin-bottom: 20vh;
+}
+.intro{
+    height: 70vh;
+    width: 100%;
+    background: pink;
+    margin: 0 auto;
+    header{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        h1{
+            text-align: center;
+            
+            
+        }
+    }
+}
+.brief{
+    background: purple;
+    margin: 0 auto;
+}
+.short{
+    position: relative;
+    height: 30vh;
+    padding-top: 20%;
+}
+.shortDesc{
+    position: relative;
+    height: 30vh;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    
+}
+.featgallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.showMe{
+    display: flex;
+    background: red;
+    margin: 0 auto;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    &:hover{
+        width: 500px;
+    }
+}
+.long{
+    position: relative;
+    background: blue;
+    height: 250vh;
+    p{
+        height: 20vh;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.wow{
+    
+    height: 40vh;
+    background: green;
+    
+}
+.end{
+    background: orange;
+    
+    
 }
