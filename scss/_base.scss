@@ -111,6 +111,7 @@ body{
 }
 #logo{
     img{
+        opacity: .3;
         width: 50px;
         margin: 5px;;
     }
@@ -321,4 +322,67 @@ body{
     background: orange;
     
     
+}
+//3D Projects
+.threed{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,.3), black);
+    height: 80vh;
+    width: 70vw;
+//    position: relative;
+}
+.threedimgs{
+    height: 70%;
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+.twosmall{
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    img{
+       
+        height: 48%;
+        margin: 10px;
+        padding: auto;
+    }
+}
+.onebig{
+    height: 100%;
+
+}
+.bigguy{
+    height: 100%;
+    margin: 10px;
+    background: rgba(0,0,0,.6);
+}
+
+.threedtext{
+    background: black;
+    text-align: center;
+    padding: 10px;
+    h2{
+        text-align: center;
+    }
+    p{
+        font-weight: 300;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: #939393;
+        margin: 0 auto;
+        &:hover{
+            color: white;
+        }
+    }
 }

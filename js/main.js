@@ -47,6 +47,7 @@ $("#projects").click(function(){
     $(this).addClass("selected");
     return;
 });
+
 $(".cat").click(function(){
     $(".selected").removeClass("selected");
     $(".sublist").slideUp();
@@ -66,6 +67,13 @@ $(".pageSection").click(function(){
 $( "p" ).click(function() {
   $( this ).slideUp();
 });
+
+$(".threedlink").click(function(){
+    var id = this.id;
+    SLIDER.slideUp();
+    $(".see").fadeOut();
+    $("#"+id+"box").fadeToggle();
+})
 
 //sidestep
 var screenHeight = $(window).height();
