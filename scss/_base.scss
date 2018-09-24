@@ -102,7 +102,7 @@ body{
 }
 .selected{
     font-weight: bold;
-    color: white !important;
+    color: #57cca4 !important;
     
 }
 .subselect{
@@ -151,9 +151,7 @@ body{
     margin: 0 auto;
     margin-top: 20vh;
 }
-
 //TOPBAR
-
 
 //SLIDER CONTROLS
 .arw{
@@ -178,9 +176,11 @@ body{
 .circ{
 
 }
+
 //CAROSEL
 .slider{
     height: 60vh;
+    cursor: pointer;
 }
 .recentBox{
     margin: auto;
@@ -226,10 +226,6 @@ body{
 .slick-dots{
     color: white;
 }
-#sluice{
-    background: url("../img/sluice.png") no-repeat center center;
-    background-size: contain;
-}
 #talus{
     background: url("../img/talus.png") no-repeat center center;
     background-size: contain;
@@ -242,6 +238,11 @@ body{
     background: url("../img/pharos.png") no-repeat center center;
     background-size: contain;
 }
+#sluice{
+    background: url("../img/sluice.png") no-repeat center center;
+    background-size: contain;
+}
+
 //Documentations
 .feat{
     color: white;
@@ -252,22 +253,31 @@ body{
 .intro{
     height: 70vh;
     width: 100%;
-    background: pink;
     margin: 0 auto;
     header{
+        
         width: 100%;
         height: 100%;
         position: relative;
         text-align: center;
-        h1{
-            text-align: center;
-            
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),black);
+        h2{
+            font-size: 36px;
+            color: white;
+            height: 100px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            font-weight: 800;
+            margin-bottom: 0px;
             
         }
+        
     }
 }
 .brief{
-    background: purple;
+    background: black;
     margin: 0 auto;
 }
 .short{
@@ -283,6 +293,7 @@ body{
     bottom: 0;
     margin: auto;
     text-align: center;
+    font-size: 1.4em;
     
 }
 .featgallery{
@@ -291,38 +302,229 @@ body{
     justify-content: center;
     
 }
+
 .showMe{
+    
     display: flex;
-    background: red;
     margin: 0 auto;
     justify-content: center;
     height: 400px;
     width: 100%;
-    &:hover{
-        width: 500px;
-    }
+    background-size: contain;
+    margin: 50px 10px;
 }
 .long{
     position: relative;
-    background: blue;
-    height: 250vh;
+    background: black;
     p{
-        height: 20vh;
+        font-size: 18px;
+        
         width: 80%;
         margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 80px;
+        a{
+            color: #edb44c;
+            text-decoration: none;
+        }
+    }
+    
+    
+}
+.longDesc{
+    background: black;
+    ul{
+        font-size: 24px;
+        list-style: none;
+        padding: 0px;
+        text-align: center;
+        line-height: 1.5em;
     }
 }
 .wow{
     
     height: 40vh;
-    background: green;
+//    background: green;
     
+}
+.bottomgallery{
+    background: black;
+    display: flex;
+}
+.bottombig{
+    height: 500px;
+    width: 60%;
+    background: blue;
+}
+.bottompicsmall{
+    height: 500px;
+    Width: 40%;
+}
+.btmsmlpic{
+    width: 100%;
+    height: 50%;
+    background: pink;
 }
 .end{
-    background: orange;
+    font-size: 20px;
+//    transform:translateY(-80px);
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(black, rgba(0,0,0,0));
+    a{
+        
+        width: 200px;
+        margin: 0 auto;
+            color: #edb44c;
+            text-decoration: none;
+    }
     
     
 }
+
+
+//Talus Doc
+
+#tintro{
+    background: url("../img/tland.png") no-repeat center center;
+    background-size: contain;
+    header{
+
+        h2{
+            
+        }
+    }
+}
+#tshowone{
+    background: url("../img/thome.png") no-repeat center center;
+}
+#tshowtwo{
+        background: url("../img/tnews.png") no-repeat center center;
+}
+#tshowthree{
+        background: url("../img/tmerit.png") no-repeat center center;
+}
+#twow{
+    height: 800px;
+    background: url("../img/talusgif.gif") no-repeat center center;
+    background-size: contain;
+}
+#tbtmpic{}
+#tbtmpicone{}
+#tbtmpictwo{}
+
+//SVA Doc
+#sintro{
+    background: url("../img/sland.png") no-repeat center center;
+    background-size: cover;
+    header{
+        h2{
+            
+            
+        }
+    }
+}
+#sshowmeone{
+    background: url("../img/ssticks.png") no-repeat center center;
+    background-size: contain;
+}
+#sshowmetwo{
+        background: url("../img/OperatorBuff2.png") no-repeat center center;
+    background-size:contain;
+}
+#sshowmethree{
+        background: url("../img/logogold.png") no-repeat center center;
+        background-size: contain;
+}
+#swow{
+    height: 800px;
+    background: url("../img/swow.gif") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+#sbtmpic{}
+#sbtmpicone{}
+#sbtmpictwo{}
+
+//Pharos Doc
+#pintro{
+    background: url("../img/pharosland.png") no-repeat center center;
+    background-size: cover;
+    header{
+        h2{
+            
+            
+        }
+    }
+}
+#pshowmeone{
+    background: url("../img/screens.png") no-repeat center center;
+    background-size: contain;
+}
+#pshowmetwo{
+    background: url("../img/light.png") no-repeat center center;
+    background-size:contain;
+}
+#pshowmethree{
+        background: url("../img/pp6.png") no-repeat center center;
+        background-size: contain;
+}
+#pwow{
+    height: 800px;
+    background: url("../img/pwow.gif") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+#pbtmpic{}
+#pbtmpicone{}
+#pbtmpictwo{}
+
+//Sluice Doc
+
+#lintro{
+    background: url("../img/page3.png") no-repeat center center;
+    background-size: cover;
+    header{
+        h2{
+            
+            
+        }
+    }
+}
+#lshowmeone{
+    background: url("../img/livetemp.png") no-repeat center center;
+    background-size: contain;
+}
+#lshowmetwo{
+        background: url("../img/mockup.png") no-repeat center center;
+    background-size:contain;
+}
+#lshowmethree{
+        background: url("../img/48hrtemp.png") no-repeat center center;
+        background-size: contain;
+}
+#lwow{
+    height: 800px;
+    background: url("../img/page2.png") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+#lbtmpic{
+    background: url("../img/bottomsluice.png")no-repeat center center;
+    background-size: contain;
+}
+#lbtmpicone{
+    background: url("../img/personas.png")no-repeat center center;
+    background-size: contain;
+
+}
+#lbtmpictwo{
+    background: url("../img/mock2.JPG")no-repeat center center;
+    background-size: contain;
+}
+
+
+
 //3D Projects
 .threed{
     position: fixed;
@@ -334,15 +536,16 @@ body{
     color: white;
     background: linear-gradient(rgba(0,0,0,.3), black);
     height: 80vh;
-    width: 70vw;
+    width: 75vw;
 //    position: relative;
 }
 .threedimgs{
     height: 70%;
-    
+    width: 95%;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    margin: 50px auto;
     
 }
 .twosmall{
@@ -357,15 +560,24 @@ body{
     }
 }
 .onebig{
-    height: 100%;
+    margin-left: 5px;
+//    height: 100%;
+    position: relative;
+    width: 60%;
+    
 
 }
 .bigguy{
-    height: 100%;
-    margin: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 100%;
+    width: 100%;
+    margin: auto;
     background: rgba(0,0,0,.6);
 }
-
 .threedtext{
     background: black;
     text-align: center;
@@ -386,3 +598,42 @@ body{
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

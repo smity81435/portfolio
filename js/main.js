@@ -1,6 +1,9 @@
 //VARIABLES
 const SLIDER = $(".slider");
-
+const SEES = $(".see");
+const RECENTKIDS = $(".recentlink");
+const BACK =$("#bkarw");
+console.log(RECENTKIDS);
 
 //SLIDER
 $(document).ready(function(){
@@ -28,26 +31,28 @@ $(document).ready(function(){
 });
 $(".textbox").click(function(){
     var id = this.id;
-    if(SLIDER.hasClass("no")==false){
-        SLIDER.fadeOut();
-        SLIDER.addClass("no");
-        console.log("boom "+id);
+    SLIDER.fadeOut();
+    $("#"+id+"Page").delay(300).fadeIn(); 
+    $("#recentList").slideDown();
+    $("#bkarw").delay(100).fadeIn();
+    for(var i = 0; i < RECENTKIDS.length; i++){
+        var thisisit = $(RECENTKIDS[i]).data("name");
+        console.log("Okie Dokie");
+        if(thisisit==id){
+            console.log(thisisit);
+            $(RECENTKIDS[i]).addClass("selected");
+        }
     }
-    $("#"+id+"Page").fadeIn();
-    
 });
-
-
-
-//NAV FUNCTIONS
+//Nav 
 $("#projects").click(function(){
+    $("#recentList").slideUp();
     $(".selected").removeClass("selected");
     console.log("done");
     $("#projectcats").slideToggle("closed");
     $(this).addClass("selected");
     return;
 });
-
 $(".cat").click(function(){
     $(".selected").removeClass("selected");
     $(".sublist").slideUp();
@@ -67,61 +72,47 @@ $(".pageSection").click(function(){
 $( "p" ).click(function() {
   $( this ).slideUp();
 });
-
 $(".threedlink").click(function(){
     var id = this.id;
     SLIDER.slideUp();
     $(".see").fadeOut();
     $("#"+id+"box").fadeToggle();
-})
-
-//sidestep
+});
+$("#recent").click(function(){
+    BACK.fadeOut();
+    SEES.fadeOut();
+    SLIDER.hide().fadeIn(1000);
+    $("#projectcats").slideUp();
+    $("#recentList").slideDown();
+    console.log("Aye Aye Sir");
+});
+$(".recentlink").click(function(){
+    console.log("hey there");
+    var getName = $(this).data("name");
+    for(var i = 0; i < RECENTKIDS.length; i++){
+        $(RECENTKIDS[i]).removeClass("selected");
+    }
+    $(this).addClass("selected");
+    SEES.fadeOut();
+    SLIDER.fadeOut();
+    console.log(getName);
+    $("#"+getName+"Page").delay(800).fadeIn();
+    
+});
+//Scroll
 var screenHeight = $(window).height();
-
 $(window).scroll(function(){
     var x = $(this).scrollTop();
     var banana =Math.floor(x/screenHeight);
-    console.log(banana);
-    if(banana == 0){
-        $('#one').css({
-            'opacity' : '1'
-        });
-        
+    console.log(banana);    
+    if(x >= 60){
+        $("#nameBanner").fadeOut();
     }else{
-        $('#one').css({
-            'opacity' : '.5'
-        });
-    }
-    if( banana == 1){
-        $('#two').css({
-            'opacity' : '1'
-        });
-        
-    } else{
-        $('#two').css({
-            'opacity' : '.5'
-        });
-    }
-    if( banana ==3){
-        $('#three').css({
-            'opacity' : '1'
-        });
-        
-    }else{
-        $('#three').css({
-            'opacity' : '.5'
-        });
-    }
-    if( banana==4){
-        $('#four').css({
-            'opacity' : '1'
-        }); 
-    }else{
-        $('#four').css({
-            'opacity' : '.5'
-        });
+        $("#nameBanner").fadeIn();
     }
     
 });
 
-
+$("#swow").click(function(){
+    window.location.href="https://teespring.com/shop/operator-buffalo?aid=marketplace&tsmac=marketplace&tsmic=search#pid=46&cid=2744&sid=front";
+})

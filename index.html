@@ -39,24 +39,24 @@
             <div id="menu">
                 <ul>
                     <li><a href="#" id="recent" class="pageSection selected">RECENT</a>
-                        <ul class="recentList closed">
-                            <li>Talus</li>
-                            <li>SVA</li>
-                            <li>Pharos</li>
-                            <li>Sluice</li>
+                        <ul class="mainList closed" id="recentList">
+                            <li><a href="#" data-name="talus" class="recentlink" id="talusLink">Talus</a></li>
+                            <li><a href="#" data-name="sva" class="recentlink" id="svaLink">SVA</a></li>
+                            <li><a href="#" data-name="pharos" class="recentlink" id="pharosLink">Pharos</a></li>
+                            <li><a href="#" data-name="sluice" class="recentlink" id="sluiceLink">Sluice</a></li>
                         </ul>
-                    
+
                     </li>
                     <li><a href="#" id="projects" class="pageSection projList">PROJECTS</a>
-                        <ul id="projectcats" class="closed">
+                        <ul id="projectcats" class="mainList closed">
                             <li class="cat"><a href="#" class="cat" id="featured"></a></li>
                             <li class="cat"><a href="#" class="cat" id="cat1">GRAPHIC DESIGN</a>
                                 <ul class="sublist closed">
                                     <li><a href="#" class="proj" id="projid" target="_blank">SVA</a></li>
-<!--                                    <li><a href="#" class="proj" id="projid" target="_blank">MONA MOVERS</a></li>-->
-<!--                                    <li><a href="#" class="proj" id="projid" target="_blank">HORNED LIZARD STUDIOS</a></li> -->
-<!--                                    <li><a href="#" class="proj" id="projid" target="_blank">COLORADO SYMPHONY</a></li>-->
-<!--                                    <li><a href="#" class="proj" id="projid" target="_blank">ODYSSEY</a></li>-->
+                                    <!--                                    <li><a href="#" class="proj" id="projid" target="_blank">MONA MOVERS</a></li>-->
+                                    <!--                                    <li><a href="#" class="proj" id="projid" target="_blank">HORNED LIZARD STUDIOS</a></li> -->
+                                    <!--                                    <li><a href="#" class="proj" id="projid" target="_blank">COLORADO SYMPHONY</a></li>-->
+                                    <!--                                    <li><a href="#" class="proj" id="projid" target="_blank">ODYSSEY</a></li>-->
                                 </ul>
                             </li>
                             <li class="cat"><a href="#" class="cat" id="cat2">WEB DEVELOPMENT</a>
@@ -77,10 +77,10 @@
                             </li>
                             <li class="cat"><a href="#" id="cat4">3D DESIGN</a>
                                 <ul class="sublist closed">
-                                    <li><a href="#" class="proj threedlink" id="nun" >EVIL NUN</a></li>
-                                    <li><a href="#" class="proj threedlink" id="rgb" >RGB VISUALIZER</a></li>
-                                    <li><a href="#" class="proj threedlink" id="teapot" >TEAPOT</a></li>
-                                    <li><a href="#" class="proj threedlink" id="fox" >LOW-POLY FOX</a></li>
+                                    <li><a href="#" class="proj threedlink" id="nun">EVIL NUN</a></li>
+                                    <li><a href="#" class="proj threedlink" id="rgb">RGB VISUALIZER</a></li>
+                                    <li><a href="#" class="proj threedlink" id="teapot">TEAPOT</a></li>
+                                    <li><a href="#" class="proj threedlink" id="fox">LOW-POLY FOX</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -94,131 +94,164 @@
         </div>
         <div id="content">
             <div class="slider one-time autoplay">
-                    <div class="recentBox" id="talus">
-                    
-                       <div class="textbox"id="talus">
-                           <div class="fadebox">
-                                <h3>Talus Analytics</h3>
-                                <p>Company website for the data analytics and web development company <em>Talus Analytics</em></p>
-                            </div>
+                <div class="recentBox" id="talus">
+
+                    <div class="textbox" id="talus">
+                        <div class="fadebox">
+                            <h3>Talus Analytics</h3>
+                            <p>Company website for the data analytics and web development company <em>Talus Analytics</em></p>
                         </div>
                     </div>
-                    <div class="recentBox" >
-                      
-                        <div class="textbox"id="sva">
-                           <div class="fadebox">
-                                <h3>Student Veterans Assoc.</h3>
-                                <p>Branding for the The University of Colorado's <em>Student Veterans Association.</em></p>
-                            </div>
+                </div>
+                <div class="recentBox">
+
+                    <div class="textbox" id="sva">
+                        <div class="fadebox">
+                            <h3>Student Veterans Assoc.</h3>
+                            <p>Branding for the The University of Colorado's <em>Student Veterans Association.</em></p>
                         </div>
                     </div>
-                    <div class="recentBox" >
-                     
-                        <div class="textbox" id="pharos">
-                           <div class="fadebox">
-                                <h3>Pharos</h3>
-                                <p>Graphic design and branding for an artificially intelligent audiobook application <em>Pharos.</em></p>
-                            </div>
+                </div>
+                <div class="recentBox">
+
+                    <div class="textbox" id="pharos">
+                        <div class="fadebox">
+                            <h3>Pharos</h3>
+                            <p>Graphic design and branding for an artificially intelligent audiobook application <em>Pharos.</em></p>
                         </div>
                     </div>
-                    <div class="recentBox" >
-                       
-                        <div class="textbox" id="sluice">
-                           <div class="fadebox">
-                                <h3>Sluice</h3>
-                                <p>UI/UX Development and Branding for a river-sport enthusiast mobile application <em>Sluice.</em></p>
-                            </div>
+                </div>
+                <div class="recentBox">
+
+                    <div class="textbox" id="sluice">
+                        <div class="fadebox">
+                            <h3>Sluice</h3>
+                            <p>UI/UX Development and Branding for a river-sport enthusiast mobile application <em>Sluice.</em></p>
                         </div>
                     </div>
+                </div>
             </div>
-            <div class="bkarw"></div>
+            <!--            <div class="bkarw"></div>-->
             <div class="see feat" id="talusPage">
-                <div class="intro">
+                <div class="intro" id="tintro">
                     <header>
                         <h2>Talus Analytics Company Page</h2>
                     </header>
                 </div>
                 <div class="brief">
                     <div class="short">
-                        <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus labore ipsam delectus facere voluptatem molestias nesciunt quaerat nisi odit quod blanditiis, fuga a velit laudantium magni sapiente veritatis repellendus.</p>
+                        <p class="shortDesc">In 2018, I developed the company website for <em>Talus Analytics</em>, a small, woman-owned analytics and web development company based out of Washington D.C., with a satellite facility in Boulder, CO. </p>
                     </div>
                     <div class="featgallery">
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe" id="tshowone"></div>
+                        <div class="showMe" id="tshowtwo"></div>
+                        <div class="showMe" id="tshowthree"></div>
                     </div>
                 </div>
                 <div class="long">
                     <section class="longDesc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, exercitationem, suscipit? Natus voluptatibus beatae animi iste aliquam, recusandae perspiciatis. Libero consequatur suscipit dolores natus quae, culpa sequi. Velit, illum, mollitia.</p>
-                        <div class="wow"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate molestiae accusamus quaerat soluta nam. Quos, incidunt ratione sunt laborum fugiat culpa ullam accusamus laudantium rerum hic dolores, soluta deserunt sed!
+                        <p>Talus Analytics deals almost exclusively with organizations that intend to make change on an international scale. With clients like FEMA, the US CDC, NATO, and Georgetown University, Talus is quickly growing past their peers in the field of datavisualization and statistical analysis. While working for them as a UIUX Design and Web Development Inter over the summer of 2018, they requested that I rebuild the company website. <br><br> The rebuild project, which had initially started as a simple landing page, quickly became increasingly complex, and before long the company decided to incorporate more and more of their content. The tricky part, was creating a page that the company could update dynamically as they they published more of their work. <br><br>To tackle the project, I used a powerful JavaScript library that Talus was using for anumber of their other Data Visualization projects; D3.js. While the D3.js library is normaly used for complex (and stunning) data visualization, I ended up utilizing it to import large datasets full of project descriptions and team information. You can see the result of that implementation in the gif below:</p>
+                        <div class="wow" id="twow"></div>
+                        <p>
+                            I also assisted developers and data scientists at Talus with the development of a web application being design for the United States Department of Homeland Security named MERIT. MERIT is designed to help community planners to make responsible decisions about their comminuty in regards to disaster mitigation: specifically with flooding. The application requested location data, then presented the user with a detailed analysis of that location, and provided them possible solutions to resiliency problems in the area. <br><br> The Application relied heavily on D3.js, and for the first time I was able to witness how the back-end developers could patch in custom API's in order to provide powerful results. Unfortunately, I am not allowed to disclose photos or links to MERIT, or any of the other projects from Talus Analytics &lpar; with the company website being the exception &rpar;.
                         </p>
                     </section>
                 </div>
+                <div class="bottomgallery">
+                    <div class="bottombig" id="tbtmpic"></div>
+                    <div class="bottompicsmall">
+                        <div class="btmsmlpic" id="tbtmone"></div>
+                        <div class="btmsmlpic" id="tbtmtwo"></div>
+                    </div>
+                </div>
                 <div class="end">
-                    <a href="">link to page</a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellendus magnam, sed eum at sunt saepe delectus veniam, vel vitae quibusdam, consequuntur quam nobis qui? Voluptatem aspernatur culpa, ipsam quis!</p>
+                    <a href="http://creative.colorado.edu/~dosm6711/talus/taluspage/" class="pagelink">LINK TO PAGE</a>
+                    <p>I may go back to working for Talus Analytics in the near future, so stay tuned for more information!</p>
                 </div>
             </div>
             <div class="see feat" id="svaPage">
-                <div class="intro">
+                <div class="intro" id="sintro">
                     <header>
-                        <h2>CU Student Veterans Association Branding</h2>
+                        <h2>CU Student Veterans Association</h2>
                     </header>
                 </div>
                 <div class="brief">
                     <div class="short">
-                        <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam hic ipsum placeat quia dolorum. Dolore beatae tenetur cumque culpa quae, ipsum quo at non. Commodi modi ex suscipit, rerum ipsum?</p>
+                        <p class="shortDesc">The ongoing Graphic Design and Re-Branding of the University of Colorado's Student Veterans Association.</p>
                     </div>
                     <div class="featgallery">
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe" id="sshowmeone"></div>
+                        <div class="showMe" id="sshowmetwo"></div>
+                        <div class="showMe" id="sshowmethree"></div>
                     </div>
                 </div>
                 <div class="long">
                     <section class="longDesc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi unde provident, distinctio optio harum veniam nisi vero voluptatum sequi asperiores. Nobis eligendi ipsam quasi cupiditate labore dolorem iste. Id, ipsa!</p>
-                        <div class="wow"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit vel sit! Nulla est animi illum vitae ipsa minus architecto. Mollitia et ullam nulla nobis saepe, perferendis dolor doloribus minus.</p>
+                        <p>For the past four years, I have been the graphic designer of the Student Veterans Association here at the University of Colorado. I had originally been approached by the President of the SVA to produce t-shirts for the Association, and quickly expanded to making all sorts of products. I have designed, t-shirts, stickers, banners, coozies, flyers, and repeatedly re-designed the logo for them. <br><br> In the fall of 2017, I led a group of five students in the "Student Veterans Association Development Project", where we put together a collection of products for them to place in their new office, and gave a fresh new set of products to take into the upcoming year. We also wrote an extensive report on the SVA, and how we thought that it could better expand by using updated advertisements around campus targeting new student veterans.</p>
+                        <div class="wow" id="swow"></div>
+                        <p>At some point, I became disenfranchized with going through the campus approval process for all of the new gear that I was producing. They kept telling me that veterans would be targeted on campus if I produced gear for them that other people would see. I completely disagreed, and realized that I needed to take matters into my own hands. Through <a href="http://www.teespring.com" target="_blank">Teespring.com</a>, I made a new line of gear, that donated a portion of all of the profits to the Wounded Warriors Foundation. </p>
                     </section>
                 </div>
+                <div class="bottomgallery">
+                    <div class="bottombig" id="sbtmpic"></div>
+                    <div class="bottompicsmall">
+                        <div class="btmsmlpic" id="sbtmone"></div>
+                        <div class="btmsmlpic" id="sbtmtwo"></div>
+                    </div>
+                </div>
                 <div class="end">
-                    <a href=""></a>
-                    <p></p>
+                    <a href="">LINK TO PAGE</a>
+                    <p>For any veterans at the University of Colorado Boulder looking to score some free gear, <a href="http://www.facebook.com/cusva" target="_blank">check out the CU SVA facebook page</a>, or <a href="#" id="contactlink">contact</a> me!</p>
                 </div>
             </div>
             <div class="see feat" id="pharosPage">
-                <div class="intro">
+                <div class="intro" id="pintro">
                     <header>
                         <h2>PHAROS Mobile Application Design</h2>
                     </header>
                 </div>
                 <div class="brief">
                     <div class="short">
-                        <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae error, fuga eum esse unde accusamus, nam alias voluptas recusandae perspiciatis. Quibusdam earum explicabo animi sunt et accusamus maxime nam recusandae!</p>
+                        <p class="shortDesc">The UI/UX and Design of the fictional app <em>Pharos</em>, the world's first Artificially Intelligent Audiobook App. </p>
                     </div>
                     <div class="featgallery">
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe" id="pshowmeone"></div>
+                        <div class="showMe" id="pshowmetwo"></div>
+                        <div class="showMe" id="pshowmethree"></div>
                     </div>
                 </div>
                 <div class="long">
                     <section class="longDesc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo eum similique sunt vero repudiandae fugit, sequi, aliquid quis ullam nemo hic? Inventore consequuntur, laborum blanditiis dolor ipsum ratione odio.</p>
-                        <div class="wow"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat beatae dolorem id culpa ea sit aspernatur porro nulla maxime repellendus fuga, quisquam animi nihil totam, nisi accusamus velit ullam. Voluptas?</p>
+                        <p>During a digital design course at the University of Colorado Boulder, I made the UI/UX design and branding for a fictional audiobook app names Pharos. The application, which would utilize artificial intelligence to give you getter book reccomendations, was birthed from my frustrations in finding interesting books to read. The subsequent design practice helped me refine my ability to mold cohesive user experiences. </p>
+                        <div class="wow" id="pwow"></div>
+                        <p>During the design process of Pharos, utilized a number of applications to achieve the desired result, including: </p><br>
+                        <ul>
+                            <li>Affinity Designer </li>
+                            <li>Adobe Photoshop </li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe XD</li>
+                            <li>InVision App</li>
+                            <li>Sketch</li>
+                        </ul>
+
+                        <p>
+                            The final projet would include a full 12-page design guide that detailed everything from typography, to color palette, to multiple concepts for an online landing page. This project helped me solidify certain aspects of my design style, and helped me bring out the more refined aspect of my work. </p>
                     </section>
                 </div>
+                <div class="bottomgallery">
+                    <div class="bottombig" id="pbtmpic"></div>
+                    <div class="bottompicsmall">
+                        <div class="btmsmlpic" id="pbtmpicone"></div>
+                        <div class="btmsmlpic" id="pbtmpictwo"></div>
+                    </div>
+                </div>
                 <div class="end">
-                    <a href=""></a>
+                    <a href="/pdfs/Cover.pdf" target="_blank">FULL DESIGN GUIDE</a>
                     <p></p>
                 </div>
             </div>
             <div class="see feat" id="sluicePage">
-                <div class="intro">
+                <div class="intro" id="lintro">
                     <header>
                         <h2>Sluice UI/UX Design</h2>
                     </header>
@@ -228,17 +261,24 @@
                         <p class="shortDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, illo sint aspernatur ipsam maiores enim expedita. Fugiat porro officia temporibus at, odio iste beatae necessitatibus, repellat esse id. Deleniti, minima.</p>
                     </div>
                     <div class="featgallery">
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
-                        <div class="showMe"><img src="http://via.placeholder.com/300x400" alt=""></div>
+                        <div class="showMe" id="lshowmeone"></div>
+                        <div class="showMe" id="lshowmetwo"></div>
+                        <div class="showMe" id="lshowmethree"></div>
                     </div>
                 </div>
                 <div class="long">
                     <section class="longDesc">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo consectetur, optio reprehenderit, officia earum quisquam labore aliquid ut perspiciatis laborum dolore facilis neque explicabo officiis praesentium alias ullam quod.</p>
-                        <div class="wow"></div>
+                        <div class="wow" id="lwow"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit, debitis sint deleniti perspiciatis voluptatum, cum. Tempore, animi dolore veniam alias architecto quod. Debitis reprehenderit maxime nulla a corporis hic!</p>
                     </section>
+                </div>
+                <div class="bottomgallery">
+                    <div class="bottombig" id="lbtmpic"></div>
+                    <div class="bottompicsmall">
+                        <div class="btmsmlpic" id="lbtmpicone"></div>
+                        <div class="btmsmlpic" id="lbtmpictwo"></div>
+                    </div>
                 </div>
                 <div class="end">
                     <a href=""></a>
@@ -246,7 +286,7 @@
                 </div>
             </div>
             <div class="see threed closed" id="nunbox">
-                <div class="threedimgs" >
+                <div class="threedimgs">
                     <div class="twosmall">
                         <img src="img/nunface.jpg" alt="Evil Nun"><img src="img/nunplan.jpg" alt="Evil Nun">
                     </div>
@@ -263,7 +303,7 @@
             <div class="see threed closed" id="rgbbox">
                 <div class="threedimgs">
                     <div class="twosmall">
-                        <img src="img/rgbone.jpg"rgb2 alt="rgb visualizer"><img src="img/rgbtwo.jpg" alt="rgb visualizer">
+                        <img src="img/rgbone.jpg" rgb2 alt="rgb visualizer"><img src="img/rgbtwo.jpg" alt="rgb visualizer">
                     </div>
                     <div class="onebig">
                         <iframe src="https://player.vimeo.com/video/271337052" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="bigguy"></iframe>
@@ -288,7 +328,7 @@
                 <div class="threedtext">
                     <h2>The Glass Teapot</h2>
                     <p>This teapot was designed and rendered using the Fusion 3D program.</p>
-                <a href="https://wordpress.com/view/dfreshform.wordpress.com" target="_blank">Documentation</a>
+                    <a href="https://wordpress.com/view/dfreshform.wordpress.com" target="_blank">Documentation</a>
                 </div>
 
             </div>
@@ -304,8 +344,14 @@
                 <div class="threedtext">
                     <h2>Low-Poly Fox</h2>
                     <p>I designed this Low-Polt Fox in Fusion 3D, then later printed it out on a Lulzbot 3D Printer. Unfortunately, it came out looking like a scarface fox!</p>
-                <a href="https://wordpress.com/view/dfreshform.wordpress.com" target="_blank">Documentation</a>
+                    <a href="https://wordpress.com/view/dfreshform.wordpress.com" target="_blank">Documentation</a>
                 </div>
+
+            </div>
+            <div class="see about closed" id="aboutbox">
+
+            </div>
+            <div class="see contact closed" id="contactbox">
 
             </div>
         </div>
@@ -320,7 +366,7 @@
     <script src="js/plugins.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    
+
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function() {
