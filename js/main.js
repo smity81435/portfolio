@@ -6,6 +6,7 @@ const BACK =$("#bkarw");
 const CATS = $(".cat");
 const SUBS= $(".sub");
 const POS = $(".positionLabel");
+const THUMBS=$(".projthumb");
 console.log(RECENTKIDS);
 
 //SLIDER
@@ -50,6 +51,9 @@ $(".textbox").click(function(){
 });
 //Nav 
 $("#projects").click(function(){
+    SLIDER.slideUp();
+    SEES.slideUp();
+    $(".projectPage").delay(200).fadeIn();
     console.log("two");
     $("#recentList").slideUp();
     $(".selected").removeClass("selected");
@@ -58,6 +62,18 @@ $("#projects").click(function(){
     $(this).addClass("selected");
     return;
 });
+THUMBS.click(function(){
+    console.log("thumb");
+    SEES.fadeOut();
+    SLIDER.fadeOut();
+    var id = $(this).data("name");
+    if(id == "ohboy"){
+        console.log("ohboy");
+        var url= $(this).data("url");
+        window.location.href=url;
+    }
+    $("#"+id).fadeIn();
+})
 CATS.click(function(){
     console.log("three");
     CATS.children("ul").slideUp();

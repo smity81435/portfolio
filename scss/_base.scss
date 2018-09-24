@@ -155,7 +155,7 @@ body{
 //TOPBAR
 .helper{
     position: fixed;
-    right: -100px;
+    right: -30px;
     top: 300px;
     height: 40px;
     width: 200px;
@@ -164,6 +164,8 @@ body{
 }
 .positionLabel{
     opacity: .3;
+    
+    font-size: 36px;
     color: #57cca4;
     height: 40px;
     width: 200px;
@@ -232,7 +234,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 101%;
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,.6));
 }
 .slick-list{
@@ -258,11 +260,114 @@ body{
     background: url("../img/sluice.png") no-repeat center center;
     background-size: contain;
 }
+//Projects page
+.projectPage{
+    width: 70vw;
+    height: 70vh;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    text-align: center;
+}
+.projectRow{
+    display: flex;
+    margin: 0 auto;
+    width: 800px;;
+}
+
+
+#pone{
+    background: url("../img/talus.png")no-repeat center center;
+    background-size: cover;
+}
+#ptwo{
+    background: url("../img/sva.png")no-repeat center center;
+    background-size: cover;
+}
+#pthree{
+    background: url("../img/nunface.jpg")no-repeat center center;
+    background-size: cover;
+}
+#pfour{
+    background: url("../img/pharos.png")no-repeat center center;
+    background-size: cover;
+}
+#pfive{
+    background: url("../img/sluice.png")no-repeat center center;
+    background-size: cover;
+}
+#psix{
+    background: url("../img/ssaf.png")no-repeat center center;
+    background-size: cover;
+}
+#pseven{
+    background: url("../img/rsec.png")no-repeat center center;
+    background-size: cover;
+}
+#peight{
+    background: url("../img/fatmap.png")no-repeat center center;
+    background-size: cover;
+}
+#pnine{
+    background: url("../img/astmap.png")no-repeat center center;
+    background-size: cover;
+}
+#pten{
+    background: url("../img/earthmap.png")no-repeat center center;
+    background-size: cover;
+}
+#peleven{
+    background: url("../img/rgbone.jpg")no-repeat center center;
+    background-size: cover;
+}
+#ptwelve{
+    background: url("../img/teapot1.png")no-repeat center center;
+    background-size: cover;
+}
+.projthumb{
+    opacity: .3;
+    position: relative;
+    transition: all .4s;
+    height: 200px;
+    width: 200px;
+    &:hover{
+        opacity: 1;
+        a{
+            opacity: .8;
+            background: rgba(0,0,0,.4);
+        }
+        
+    }
+    a{
+        font-size: 18px;
+        opacity: 0;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+       margin: auto; 
+        &:hover{
+            background: rgba(0,0,0,.8);
+            text-shadow: 0px 0px 10px 10px rgba(0,0,0,.8);
+            opacity: 1;
+        }
+    }
+}
 //About
 #aboutPage{
+    
     width: 70vw;
     height: 80vh;
-    background: pink;
+    
 }
 
 .boxone{
@@ -271,14 +376,15 @@ body{
     background: url("../img/telly.jpg")no-repeat center center;
     position: relative;
     background-attachment: fixed;
+    h2{
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+        font-size: 36px;
+        color: white;
+    }
 }
-h2{
-    position: absolute;
-    bottom: 0px;
-    left: 50px;
-    font-size: 36px;
-    color: white;
-}
+
 .face{
     width: 50%;
     height: 100%;
@@ -289,7 +395,13 @@ h2{
     
 }
 .textit{
+    padding: 30px;
     
+    color: white;
+    background: rgba(0,0,0,.6);
+    h3{
+        color: #57cca4;
+    }
 }
 
 //contact
@@ -303,6 +415,7 @@ h2{
         margin: auto;
         border-radius: 3px;
         input{
+            color: white;
             margin-top: 10px;
             margin-left: 10px;
             width: 250px;
@@ -315,10 +428,11 @@ h2{
             font-weight: 300;
         }
         input::placeholder{
-            color: rgba(255,255,255,.6);
+            color: #57cca4;
             
         }
         textarea{
+            color: white;
             margin-top: 20px;
             background: rgba(0, 0, 0, 0.8);
             width: 90%;
@@ -334,7 +448,7 @@ h2{
             font-weight: 300;
         }
         textarea::placeholder{
-            color: rgba(255,255,255,.6);
+            color: #57cca4;
         }
         button{
         
@@ -748,6 +862,7 @@ h2{
     background: rgba(0,0,0,.6);
 }
 .threedtext{
+    
     background: black;
     text-align: center;
     padding: 10px;
@@ -755,12 +870,13 @@ h2{
         text-align: center;
     }
     p{
+        
         font-weight: 300;
         text-align: center;
     }
     a{
+        color: #edb44c;
         text-decoration: none;
-        color: #939393;
         margin: 0 auto;
         &:hover{
             color: white;
