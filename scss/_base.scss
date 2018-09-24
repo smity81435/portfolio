@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 //PAGE LAYOUT
 body{
     font-family: "Cormorant Garamond", serif;
@@ -84,7 +85,7 @@ body{
     }
 }
 .cat{
-    
+    color: rgba(255,255,255,.4);
     font-size: .9em;
     
 }
@@ -149,7 +150,7 @@ body{
 #content{
     width: 70vw;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 //TOPBAR
 
@@ -242,6 +243,113 @@ body{
     background: url("../img/sluice.png") no-repeat center center;
     background-size: contain;
 }
+//About
+#aboutPage{
+    width: 70vw;
+    height: 80vh;
+    background: pink;
+}
+
+.boxone{
+    width: 100%;
+    height: 70vh;
+    background: url("../img/telly.jpg")no-repeat center center;
+    position: relative;
+    background-attachment: fixed;
+}
+h2{
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    font-size: 36px;
+    color: white;
+}
+.face{
+    width: 50%;
+    height: 100%;
+    background: url("../img/dougbw.png")no-repeat center center;
+    background-size:contain;
+    position: absolute;
+    right: 0;
+    
+}
+.textit{
+    
+}
+
+//contact
+#contactPage{
+    width: 70vw;
+    height: 70vh;
+//    background: blue;
+    form{
+        width: 667px;
+        background: linear-gradient(black,rgba(0,0,0,.4));
+        margin: auto;
+        border-radius: 3px;
+        input{
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 250px;
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+            
+            background: rgba(0, 0, 0, 0.8);
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+        }
+        input::placeholder{
+            color: rgba(255,255,255,.6);
+            
+        }
+        textarea{
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            width: 90%;
+            
+            height: 200px;
+            margin-left: 10px;
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+            
+            
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+        }
+        textarea::placeholder{
+            color: rgba(255,255,255,.6);
+        }
+        button{
+        
+            width: 20%;
+            margin: 30px 40%;
+            background: black;
+            color: white;
+            font-family: "Lato", sans-serif;
+            border: 2px solid white;
+            border-radius: 3px;
+            padding: 10px;
+            opacity: .6;
+            &:hover{
+                color: #57cca4 !important;
+                opacity: 1;
+                cursor: pointer;
+                box-shadow: 0px 0px 10px 10px rgba(87, 204, 164, 0.2);
+            }
+            
+            
+        }
+        
+    }
+}
+.contactbanner{
+    background: url("../img/contactbanner.png") no-repeat center center;
+    background-size: contain;
+    width: 667px;
+    height: 200px;
+}
 
 //Documentations
 .feat{
@@ -251,7 +359,7 @@ body{
     margin-bottom: 20vh;
 }
 .intro{
-    height: 70vh;
+    height: 76vh;
     width: 100%;
     margin: 0 auto;
     header{

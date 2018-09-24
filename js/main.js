@@ -3,6 +3,8 @@ const SLIDER = $(".slider");
 const SEES = $(".see");
 const RECENTKIDS = $(".recentlink");
 const BACK =$("#bkarw");
+const CATS = $(".cat");
+const SUBS= $(".sub");
 console.log(RECENTKIDS);
 
 //SLIDER
@@ -30,6 +32,7 @@ $(document).ready(function(){
     
 });
 $(".textbox").click(function(){
+    console.log("one");
     var id = this.id;
     SLIDER.fadeOut();
     $("#"+id+"Page").delay(300).fadeIn(); 
@@ -46,6 +49,7 @@ $(".textbox").click(function(){
 });
 //Nav 
 $("#projects").click(function(){
+    console.log("two");
     $("#recentList").slideUp();
     $(".selected").removeClass("selected");
     console.log("done");
@@ -53,32 +57,56 @@ $("#projects").click(function(){
     $(this).addClass("selected");
     return;
 });
-$(".cat").click(function(){
-    $(".selected").removeClass("selected");
-    $(".sublist").slideUp();
+CATS.click(function(){
+    console.log("three");
+    CATS.children("ul").slideUp();
+    CATS.removeClass("selected");
+    $(this).addClass("selected");
     $(this).children("ul").slideDown();
-    $(this).children("a").addClass("selected");
-    console.log("ok");
-    return;
+
 });
+$(SUBS).click(function(e){
+    console.log("figure");
+    SUBS.removeClass("selected");
+    $(this).addClass("selected");
+    e.stopPropagation();
+})
+$(".graphit").click(function(){
+    var id = $(this).data("name");
+    console.log("graph");
+    SLIDER.fadeOut();
+    SEES.fadeOut();
+    $("#"+id+"Page").fadeIn();
+
+});
+$(".mobit").click(function(){
+    var id = $(this).data("name");
+    console.log("mob");
+    SLIDER.fadeOut();
+    SEES.fadeOut();
+    $("#"+id+"Page").fadeIn();
+    
+});
+
 $(".pageSection").click(function(){
+    console.log("four");
     if($(this).hasClass("projList")==false ){
         $("#projectcats").slideUp();
+        
         $(".selected").removeClass('selected');
         $(".sublist").slideUp();
         $(this).addClass("selected");
        }
 });
-$( "p" ).click(function() {
-  $( this ).slideUp();
-});
 $(".threedlink").click(function(){
+        console.log("five");
     var id = this.id;
     SLIDER.slideUp();
     $(".see").fadeOut();
     $("#"+id+"box").fadeToggle();
 });
 $("#recent").click(function(){
+    console.log("six");
     BACK.fadeOut();
     SEES.fadeOut();
     SLIDER.hide().fadeIn(1000);
@@ -87,6 +115,7 @@ $("#recent").click(function(){
     console.log("Aye Aye Sir");
 });
 $(".recentlink").click(function(){
+        console.log("seven");
     console.log("hey there");
     var getName = $(this).data("name");
     for(var i = 0; i < RECENTKIDS.length; i++){
@@ -99,6 +128,22 @@ $(".recentlink").click(function(){
     $("#"+getName+"Page").delay(800).fadeIn();
     
 });
+$("#about").click(function(){
+    var id = this.id;
+    $("#recentList").slideUp();
+    SLIDER.fadeOut();
+    SEES.fadeOut();
+    $("#"+id+"Page").delay(300).fadeIn();
+    
+})
+$("#contact").click(function(){
+    var id = this.id;
+    $("#recentList").slideUp();
+    SLIDER.fadeOut();
+    SEES.fadeOut();
+    $("#"+id+"Page").delay(300).fadeIn();
+    
+})
 //Scroll
 var screenHeight = $(window).height();
 $(window).scroll(function(){
