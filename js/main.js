@@ -5,6 +5,7 @@ const RECENTKIDS = $(".recentlink");
 const BACK =$("#bkarw");
 const CATS = $(".cat");
 const SUBS= $(".sub");
+const POS = $(".positionLabel");
 console.log(RECENTKIDS);
 
 //SLIDER
@@ -63,6 +64,8 @@ CATS.click(function(){
     CATS.removeClass("selected");
     $(this).addClass("selected");
     $(this).children("ul").slideDown();
+    
+    
 
 });
 $(SUBS).click(function(e){
@@ -89,6 +92,7 @@ $(".mobit").click(function(){
 });
 
 $(".pageSection").click(function(){
+    
     console.log("four");
     if($(this).hasClass("projList")==false ){
         $("#projectcats").slideUp();
@@ -97,6 +101,7 @@ $(".pageSection").click(function(){
         $(".sublist").slideUp();
         $(this).addClass("selected");
        }
+    $(POS).text($(this).text());
 });
 $(".threedlink").click(function(){
         console.log("five");
